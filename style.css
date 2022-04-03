@@ -1,0 +1,143 @@
+body{
+  background-image: linear-gradient(150deg, rgba(12, 12, 12, 0.895) 30%, rgba(255, 0, 0, 0.736) 65%);
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+.Heading
+{
+  /* width: 50vw; */
+  /* margin: auto; */
+  text-align: center;
+  /* font-size: large; */
+  /* color: #E50914; */
+  background:url(download_2.jpeg) ; 
+  background-clip: text;
+  background-position: 0 25%;
+  color: transparent;
+  font-size: 4rem;
+  /* text-shadow: 1px 1px 2px white; */
+
+}
+
+.container {
+  /* height: 100vh; */
+  /* width: 100vw; */
+  /* max-height: 800px;
+  max-width: 1280px;
+  min-height: 600px;
+  min-width: 1000px; */
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 0 auto;
+}
+.border {
+  height: 369px;
+  width: 290px;
+  background: transparent;
+  border-radius: 10px;
+  transition: border 1s;
+  position: relative;
+}
+.border:hover {
+  border: 1px solid #fff;
+}
+.card {
+  height: 379px;
+  width: 300px;
+  background: #808080;
+  border-radius: 10px;
+  transition: background 0.8s;
+  overflow: hidden;
+  background: #000;
+  box-shadow: 0 70px 63px -60px #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+} 
+.card0 {
+  background: url("Professor.jpg") center center no-repeat;
+  background-size: 300px;
+}
+.card0:hover {
+  background: url("Professor.jpg") left center no-repeat;
+  background-size: 500px;
+  opacity: 0.7;
+}
+.card0:hover h2 {
+  opacity: 1;
+}
+.card0:hover .fa {
+  opacity: 1;
+}
+.card1 {
+  background: url("download.jfif") center center no-repeat;
+  background-size: 300px;
+}
+.card1:hover {
+  background: url("download.jfif") left center no-repeat;
+  background-size: 500px;
+  opacity: 0.7;
+}
+.card1:hover h2 {
+  opacity: 1;
+}
+.card1:hover .fa {
+  opacity: 1;
+}
+.card2 {
+  background: url("original.jpg") center center no-repeat;
+  background-size: 300px;
+}
+.card2:hover {
+  background: url("original.jpg") left center no-repeat;
+  background-size: 500px;
+  opacity: 0.7;
+}
+.card2:hover h2 {
+  opacity: 1;
+}
+.card2:hover .fa {
+  opacity: 1;
+}
+h2 {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  color: #fff;
+  margin: 20px;
+  opacity: 0;
+  transition: opacity 1s;
+}
+.fa {
+  opacity: 0;
+  transition: opacity 1s;
+}
+.icons {
+  position: absolute;
+  fill: #fff;
+  color: #fff;
+  height: 130px;
+  top: 226px;
+  width: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.card-text{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: rgb(255, 255, 255);
+  opacity: 0;
+  transition: opacity ease-out 250ms;
+  font-size: 1.6rem;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+.card:hover .card-text,
+.card:focus .card-text{
+    opacity: 1;
+}
